@@ -1,5 +1,6 @@
 # Setup WIP
 
+
 This is an in-depth guide on using this repo. This goes over getting the base repo up and running, to understand how to add your own customizations server side like registering webhooks, routes, etc, refer to [Notes](./NOTES.md).
 
 - [ ] Run `npm i --force` to install dependencies.
@@ -30,6 +31,7 @@ This is an in-depth guide on using this repo. This goes over getting the base re
   - `pretty`: Run `prettier` on the entire project.
   - `update`: Force updates all packages to latest version and requires you to manually run `npm i --force` after. Not recommended if you don't know what you're doing.
   - `update:url`: Use `@shopify/cli-kit` to update URLs to your Shopify partner dashboard. Requires a proper setup of `.env` file.
+   `update:env`: Updates the URL from Ngrok in .env file. (Ngrok must be running in background)
   - `ngrok:auth`: Replace `<auth-token-goes-here>` with your ngrok token and run it to activate ngrok.
   - `ngrok`: Starts ngrok on port 3000.
   - `shopify`: Allows you to accesss Shopify CLI commands. Try `npm run shopify help` for more info.
