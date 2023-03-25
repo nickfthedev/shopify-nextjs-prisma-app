@@ -14,7 +14,6 @@ axios.get('http://localhost:4040/api/tunnels')
         console.error(err);
         return;
       }
-      console.log(data);
       let searchString = 'SHOPIFY_APP_URL=';
       let re = new RegExp('^.*' + searchString + '.*$', 'gm');
       let formatted = data.replace(re, 'SHOPIFY_APP_URL='+publicURL);
